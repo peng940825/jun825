@@ -20,7 +20,7 @@ const WorkExperienceItem = ({
       <div className="relative size-14 shrink-0 overflow-hidden rounded-sm bg-white">
         <Image src={logo} sizes="56px" fill alt={company} />
       </div>
-      <div className="flex min-w-0 flex-1 flex-col gap-2 pr-4 md:pr-12">
+      <div className="flex min-w-0 flex-1 flex-col gap-2">
         <h3 className="text-xl font-medium">{company}</h3>
         <p className="text-muted-foreground">{period}</p>
         <p>{description}</p>

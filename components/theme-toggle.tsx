@@ -22,6 +22,7 @@ const ThemeToggle = () => {
         variant="secondary"
         className="fixed right-3 bottom-3"
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+        aria-label="Toggle theme"
       >
         {resolvedTheme === "dark" ? <MoonStar /> : <Sun />}
       </Button>
