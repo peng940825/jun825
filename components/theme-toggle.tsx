@@ -20,7 +20,7 @@ const ThemeToggle = () => {
       <Button
         size="icon"
         variant="secondary"
-        className="absolute right-3 bottom-3"
+        className="fixed right-3 bottom-3"
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       >
         {resolvedTheme === "dark" ? <MoonStar /> : <Sun />}

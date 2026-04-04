@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -10,11 +10,6 @@ import ThemeProvider from "@/components/theme-provider";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-});
-
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
 });
 
 const geistMono = Geist_Mono({
@@ -38,7 +33,6 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
-        geistSans.variable,
         geistMono.variable,
         "font-sans",
         inter.variable,
