@@ -7,10 +7,7 @@ import { cn } from "@/lib/utils";
 import ThemeToggle from "@/components/theme-toggle";
 import ThemeProvider from "@/components/theme-provider";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const geistMono = Geist_Mono({
   subsets: ["latin"],
