@@ -13,6 +13,7 @@ const Skills = () => {
             "React / Next.js (App Router, API Routes)",
             "Vue / Nuxt 2 & 3 (Migration)",
             "Zustand / Pinia",
+            "Vite",
           ]}
         />
 
@@ -20,26 +21,21 @@ const Skills = () => {
           title="Engineering"
           items={[
             "Git Flow & CI (GitHub Actions / GitLab CI)",
-            "Vite / Husky / lint-staged",
-            "Unit Testing (Jest)",
+            "Husky / lint-staged",
+            "Unit Testing (Jest / Vitest)",
           ]}
         />
 
         <SkillGroup
           title="UI & Integration"
-          items={[
-            "Tailwind CSS / shadcn/ui",
-            "Nuxt UI / Element UI",
-            "Video Playback & Streaming Optimization",
-            "Real-time Data Synchronization via WebSocket",
-          ]}
+          items={["Tailwind CSS / shadcn/ui", "WebSocket"]}
         />
 
         <SkillGroup
           title="Architecture & Optimization"
           items={[
-            "Zod / React Hook Form / TanStack Query",
-            "Technical SEO (Ahrefs Health Score: 54 to 100)",
+            "Zod / React Hook Form / React Query",
+            "Technical SEO",
             "Dynamic Multi-brand Configuration Architecture",
           ]}
         />

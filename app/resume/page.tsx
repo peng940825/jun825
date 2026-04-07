@@ -6,7 +6,7 @@ import Education from "./_components/education";
 export const metadata = {
   title: "Resume | Jun",
   description:
-    "彭靖鈞，5 年前端開發經驗，深耕 React 與 Vue 現代化生態系。具備博弈、醫療、數位內容電商等開發背景。",
+    "5 年前端開發經驗，專注 React 與 Vue 生態系，具備電商、醫療、SaaS 等多產業開發背景",
 };
 
 const Resume = () => {

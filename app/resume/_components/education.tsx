@@ -16,7 +16,7 @@ const Education = () => {
         </div>
 
         <div className="flex min-w-0 flex-1 flex-col gap-2">
-          <h3 className="text-xl font-medium">南台科技大學</h3>
+          <h3 className="text-xl font-medium">南臺科技大學</h3>
           <p className="text-muted-foreground">資訊工程系</p>
           <p className="text-muted-foreground">2012 - 2016</p>
         </div>
