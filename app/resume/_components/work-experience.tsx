@@ -10,13 +10,12 @@ const WorkExperience = () => {
           logo="/images/resume/veda.webp"
           company="微達軟體有限公司"
           period="2025/10 - 至今"
-          description="韓國博弈論壇平台，提供用戶社群討論與內容聚合服務"
+          description="韓國博弈論壇平台，提供用戶社群討論與內容聚合服務，接手前人專案進行前端效能優化與技術債清理"
           highlights={[
-            "依據 Ahrefs 健康分析報告逐項修正技術問題，將全站 SEO 健康分數從 55 提升至 100",
-            "以全站樣式改版為起點從零重建首頁，採 Layout-agnostic 元件設計原則，資料層透過單一 Composable 集中處理，達成 UI 與邏輯的關注點分離",
-            "針對 SSR 渲染行為調整資料預取策略，確保伺服器端內容完整輸出以改善 FCP 與 LCP 指標；並就 CSR 導航情境實作 Skeleton Screen，提升導航過渡的視覺連續性",
-            "將第三方腳本統一以 Plugin 機制管理，推遲至使用者互動後才開始下載與執行，確保首屏渲染不受外部腳本干擾，有效降低主執行緒阻塞時間",
-            "透過系統性分析 Lighthouse 報告，將 Performance 分數從平均 60 提升至 80 以上",
+            "依據 Ahrefs 健康分析報告，修正重複頁面缺少 canonical 標籤、title 缺失及無對外連結等問題，將全站 SEO 健康分數從 55 提升至 100",
+            "以全站樣式改版為起點從零重建首頁，採 Layout-agnostic 元件設計原則，透過單一 Composable 集中資料邏輯，將 UI 與業務邏輯完全解耦，降低後續維護成本",
+            "將第三方腳本統一以 Plugin 機制管理，推遲至使用者互動後才開始下載與執行，確保首屏渲染不受外部腳本干擾，TBT 從 140ms 降至 20ms",
+            "針對 SSR 渲染行為調整資料預取策略，確保伺服器端內容完整輸出，FCP 從 2.4s 降至 0.8s、LCP 從 4.7s 降至 1.4s，Performance 分數從 57 提升至 88；並就 CSR 導航情境實作 Skeleton Screen，消除過渡期的視覺斷層",
           ]}
         />
 
@@ -28,8 +27,8 @@ const WorkExperience = () => {
           highlights={[
             "於 SSR 階段實作 Configuration-driven 元件映射機制，達成 Single Codebase 支援多品牌與多版型分發之高擴充性架構",
             "採用 Zod 與 React Hook Form 建立 Schema 驗證機制，確保複雜業務場景下的資料正確性",
-            "負責閃兌交易、多幣種資產管理等核心功能開發，處理幣種換算邏輯與資產狀態同步管理",
-            "導入 Husky 建立 Git Hooks 自動化流程，統一團隊程式碼提交規範與品質檢查機制",
+            "負責閃兌交易、多幣種資產管理等核心功能開發，處理幣種換算邏輯與資產狀態的同步管理",
+            "實作 WebSocket 即時聊天室，支援頻道切換與多人對話，整合 Exponential Backoff 重連策略與 heartbeat watchdog 機制，確保連線穩定性",
           ]}
         />
 
@@ -52,9 +51,9 @@ const WorkExperience = () => {
           description="JVID 數位內容電商平台，提供創作者上傳影音作品並販售給消費者之交易服務"
           highlights={[
             "負責將既有 PHP 專案重構為前後端分離架構，並執行 Nuxt 2 升級至 Nuxt 3 的遷移任務，處理跨版本外掛相容性與路由重構",
-            "開發 WebSocket 即時聊天室並優化 Video.js 播放控制流程，提升平台核心觀影與互動體驗",
+            "接手並優化 Video.js 的播放體驗，修正列表頁預先載入影片資源導致行動端記憶體溢出的 crash 問題，改為用戶觸發播放時才載入；並整合自動畫質調整機制，依據網路狀況動態切換串流品質",
             "導入 GA4 埋點機制，建立用戶行為數據追蹤架構，為產品迭代提供量化決策依據",
-            "設計行銷活動模組的跨技術棧共享架構，以 Node.js 作為分發層結合 Web Components 封裝通用元件，實現核心邏輯在不同技術棧間的複用",
+            "設計活動網站多框架共存架構，以獨立資料夾隔離各活動專案，透過 Node.js 路由層統一分發靜態資源，並將共用 Header 封裝為 Web Component 供各技術棧引用",
           ]}
         />
 
@@ -65,7 +64,7 @@ const WorkExperience = () => {
           description="跨平台寵物醫療資訊系統 (HIS)，支援多裝置應用以提升院所資訊化效率"
           highlights={[
             "使用 Vue Native 與 Electron 開發跨平台應用，整合 API 實現多端數據同步，覆蓋行動端與桌面端的操作情境",
-            "導入 TypeScript 與 Jest 撰寫單元測試，透過強型別約束與自動化測試確保醫療系統功能穩定性，提升程式碼可維護性與開發品質",
+            "導入 TypeScript 與 Jest 撰寫單元測試，以強型別約束降低執行期錯誤，並透過自動化測試覆蓋核心業務邏輯",
           ]}
         />
 

@@ -7,36 +7,32 @@ const Skills = () => {
 
       <div className="grid gap-8 md:grid-cols-2">
         <SkillGroup
-          title="Development"
+          title="Languages & Frameworks"
           items={[
             "TypeScript / JavaScript (ES6+)",
             "React / Next.js (App Router, API Routes)",
             "Vue / Nuxt 2 & 3 (Migration)",
             "Zustand / Pinia",
-            "Vite",
+            "Tailwind CSS / shadcn/ui",
           ]}
         />
 
         <SkillGroup
-          title="Engineering"
+          title="Tooling & Workflow"
           items={[
-            "Git Flow & CI (GitHub Actions / GitLab CI)",
+            "Git Flow & CI (GitLab CI / GitHub Actions)",
             "Husky / lint-staged",
             "Unit Testing (Jest / Vitest)",
           ]}
         />
 
         <SkillGroup
-          title="UI & Integration"
-          items={["Tailwind CSS / shadcn/ui", "WebSocket"]}
-        />
-
-        <SkillGroup
           title="Architecture & Optimization"
           items={[
             "Zod / React Hook Form / React Query",
+            "Multi-brand Architecture",
+            "WebSocket",
             "Technical SEO",
-            "Dynamic Multi-brand Configuration Architecture",
           ]}
         />
       </div>

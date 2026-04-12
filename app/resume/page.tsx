@@ -6,7 +6,7 @@ import Education from "./_components/education";
 export const metadata = {
   title: "Resume | Jun",
   description:
-    "5 年前端開發經驗，專注 React 與 Vue 生態系，具備電商、醫療、SaaS 等多產業開發背景",
+    "彭靖鈞，五年前端工程師，專注 React 與 Vue 生態系，橫跨電商、醫療、SaaS 等多元產業。擅長在既有專案中推動架構現代化，具備多次大型系統從舊技術棧遷移至現代化架構的實戰經驗",
 };
 
 const Resume = () => {

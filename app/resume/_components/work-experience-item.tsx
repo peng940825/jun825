@@ -20,11 +20,11 @@ const WorkExperienceItem = ({
       <div className="relative size-14 shrink-0 overflow-hidden rounded-sm bg-white">
         <Image src={logo} sizes="56px" fill alt={company} />
       </div>
-      <div className="flex min-w-0 flex-1 flex-col gap-2">
+      <div className="flex min-w-0 flex-1 flex-col gap-1">
         <h3 className="text-xl font-medium">{company}</h3>
-        <p className="text-muted-foreground">{period}</p>
+        <p className="text-muted-foreground text-sm">{period}</p>
         <p>{description}</p>
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-4">
           {highlights.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
