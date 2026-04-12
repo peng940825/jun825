@@ -20,7 +20,7 @@ const ThemeToggle = () => {
       <Button
         size="icon"
         variant="secondary"
-        className="fixed right-3 bottom-3"
+        className="fixed right-4 bottom-4"
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
         aria-label="Toggle theme"
       >
