@@ -24,7 +24,7 @@ const WorkExperienceItem = ({
         <h3 className="text-xl font-medium">{company}</h3>
         <p className="text-muted-foreground text-sm">{period}</p>
         <p>{description}</p>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-6">
           {highlights.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
